@@ -3,487 +3,461 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Adam - Three Things + Less-Than-7-Day Install - AG1 Consulting</title>
-<meta name="description" content="Built for Adam Bensman. Three things I would build differently before the post-TAMKO transition window closes. The cohort tier between the Roof Strategist courses and the Roofing STRONG Alliance application.">
+<title>For Adam &middot; Three Things I Would Build Differently &middot; AG1 Consulting</title>
+<meta name="description" content="Built for Adam Bensman. Three things I would build differently before the post-TAMKO transition window closes. The cohort tier above the courses is the single sharpest wedge.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Three Things + Less-Than-7-Day Install - For Adam">
-<meta property="og:description" content="The cohort tier between the Roof Strategist courses and the Roofing STRONG Alliance application is missing. Three things I would build differently.">
+<meta property="og:title" content="Three Things I Would Build Differently &middot; For Adam Bensman">
+<meta property="og:description" content="The cohort layer between the courses and the Roofing STRONG Alliance is missing. Year-1 floor: $440K-$1.23M incremental.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://andrei170.github.io/adam-bensman-hub/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- DAY-1 BRAND NOTE: Default is AG1 gold (#D4A84B) on near-black (#07080A). Once Adam
+     confirms his cohort palette, swap --gold and --bg-deep below. If the cohort lives in
+     the legacy Roof Strategist palette, likely dark charcoal + strong red (#C0392B-ish)
+     as the action colour. If the cohort mirrors the alliance palette, red (#C0392B) + white.
+     No other structural changes needed. The CSS variable --red-accent is wired in already
+     as a secondary accent for that swap. -->
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  :root{--bg-deep:#050506;--bg-elev:#0e0e10;--bg-card:rgba(20,20,24,0.65);--gold:#d4af6c;--gold-bright:#ecc88a;--text-primary:#ece9e3;--text-secondary:#a09c93;--text-muted:#6c685f;--border:rgba(212,175,108,0.16);--border-strong:rgba(212,175,108,0.4);--accent-soft:rgba(212,175,108,0.08);--loss-red:#dc4040;--loss-red-bright:#ff5c5c;--loss-soft:rgba(220,64,64,0.08);--loss-border:rgba(220,64,64,0.35)}
+  :root{
+    --bg-deep:#07080A;
+    --bg-elev:#0F1014;
+    --bg-card:rgba(18,20,24,0.75);
+    --gold:#D4A84B;
+    --gold-bright:#DFBA62;
+    --gold-dim:#B8922E;
+    --red-accent:#C0392B;
+    --text-primary:#F2F0EA;
+    --text-secondary:#A8A49C;
+    --text-muted:#6A665D;
+    --border:rgba(212,168,75,0.16);
+    --border-strong:rgba(212,168,75,0.40);
+    --accent-soft:rgba(212,168,75,0.07);
+    --loss-red:#BF4040;
+    --loss-red-bright:#D45555;
+    --loss-soft:rgba(191,64,64,0.08);
+    --loss-border:rgba(191,64,64,0.32)
+  }
   html{scroll-behavior:smooth}
   body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg-deep);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
-  body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 15% 5%,rgba(212,175,108,0.07),transparent 45%),radial-gradient(circle at 85% 85%,rgba(212,175,108,0.05),transparent 45%);pointer-events:none;z-index:0}
-  .container{max-width:1180px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
-  .container-narrow{max-width:820px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
-  h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-0.01em;line-height:1.15}
-  nav{position:fixed;top:0;left:0;right:0;padding:16px 0;background:rgba(5,5,6,0.85);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);z-index:100}
-  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1180px;margin:0 auto;padding:0 28px}
-  .logo{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;letter-spacing:0.04em}
-  .nav-cta{padding:9px 22px;background:var(--gold);color:var(--bg-deep);border-radius:2px;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease}
+  body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 12% 4%,rgba(212,168,75,0.07),transparent 44%),radial-gradient(circle at 88% 88%,rgba(192,57,43,0.04),transparent 44%);pointer-events:none;z-index:0}
+  .container{max-width:1140px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  .container-narrow{max-width:800px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-0.01em;line-height:1.15}
+  a{color:inherit;text-decoration:none}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;padding:15px 0;background:rgba(7,8,10,0.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);z-index:100}
+  .nav-inner{display:flex;justify-content:space-between;align-items:center;max-width:1140px;margin:0 auto;padding:0 28px}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;letter-spacing:0.04em;color:var(--gold)}
+  .logo span{color:var(--text-primary)}
+  .nav-cta{padding:9px 22px;background:var(--gold);color:#000;border-radius:2px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;transition:all 0.3s ease}
   .nav-cta:hover{background:var(--gold-bright);transform:translateY(-1px)}
-  .hero{padding:130px 0 60px;text-align:center}
+
+  /* HERO */
+  .hero{padding:128px 0 60px;text-align:center}
   .eyebrow{display:inline-block;padding:8px 18px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:100px;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:32px}
-  .hero h1{font-size:clamp(38px,5.5vw,62px);line-height:1.05;margin-bottom:18px;color:var(--text-primary);max-width:900px;margin-left:auto;margin-right:auto;text-wrap:balance}
-  .hero h2{font-size:clamp(20px,2.4vw,26px);font-weight:400;color:var(--gold-bright);margin-bottom:36px;font-style:italic;max-width:780px;margin-left:auto;margin-right:auto;text-wrap:balance}
-  .hero h2 em{color:var(--gold);font-style:italic}
-  .cta-primary{display:inline-block;padding:18px 40px;background:var(--gold);color:var(--bg-deep);border-radius:2px;font-size:14px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s ease;box-shadow:0 12px 30px rgba(212,175,108,0.2)}
-  .cta-primary:hover{background:var(--gold-bright);transform:translateY(-2px)}
-  .brand-side-note{margin-top:30px;font-size:12px;color:var(--text-muted);font-style:italic;letter-spacing:0.04em;max-width:680px;margin-left:auto;margin-right:auto}
-  section{padding:60px 0}
-  .section-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-  .section-title{font-size:clamp(30px,4vw,46px);margin-bottom:18px;max-width:880px}
-  .section-title em{color:var(--gold);font-style:italic;font-weight:400}
-  .section-sub{font-size:17px;color:var(--text-secondary);max-width:780px;margin-bottom:40px;line-height:1.65}
-  .section-sub strong{color:var(--gold-bright);font-weight:600}
-  .overview-prose p{font-size:17px;color:var(--text-secondary);max-width:780px;margin-bottom:14px;line-height:1.7}
-  .overview-prose strong{color:var(--text-primary);font-weight:600}
-  .overview-prose em{color:var(--gold-bright);font-style:italic}
-  .stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;margin-top:32px}
+  .hero h1{font-size:clamp(36px,5.5vw,62px);line-height:1.05;margin-bottom:16px;max-width:880px;margin-left:auto;margin-right:auto;text-wrap:balance}
+  .hero h1 em{color:var(--gold);font-style:italic;font-weight:400}
+  .hero-sub{font-size:18px;color:var(--text-secondary);max-width:640px;margin:0 auto 14px;line-height:1.65}
+  .hero-meta{margin:0 auto 36px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted)}
+  .hero-meta span{margin:0 12px}
+  .cta-primary{display:inline-block;padding:18px 44px;background:var(--gold);color:#000;border-radius:2px;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;transition:all 0.3s ease;box-shadow:0 12px 32px rgba(212,168,75,0.22)}
+  .cta-primary:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 16px 40px rgba(212,168,75,0.32)}
+  .hero-trust{margin-top:18px;font-size:11px;color:var(--text-muted);font-style:italic;letter-spacing:0.04em}
+
+  /* STATS BAR */
+  .stats-bar{padding:28px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:40px}
+  .stats-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
   .stat-item{text-align:center;padding:0 16px;border-right:1px solid var(--border)}
   .stat-item:last-child{border-right:0}
   .stat-num{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold);font-weight:600;line-height:1;margin-bottom:8px}
   .stat-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted)}
-  @media(max-width:880px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:18px;border-bottom:0}.stat-item{border-right:0;border-bottom:1px solid var(--border);padding:16px 8px}.stat-num{font-size:26px}}
+  @media(max-width:760px){.stats-inner{grid-template-columns:repeat(2,1fr);gap:16px}.stat-item{border-right:0;border-bottom:1px solid var(--border);padding:14px 8px}.stat-num{font-size:26px}}
+
+  /* SECTIONS */
+  section{padding:72px 0}
+  .section-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .section-title{font-size:clamp(28px,3.8vw,46px);margin-bottom:16px;max-width:880px}
+  .section-title em{color:var(--gold);font-style:italic;font-weight:400}
+  .section-sub{font-size:17px;color:var(--text-secondary);max-width:760px;margin-bottom:36px;line-height:1.65}
+  .section-sub strong{color:var(--text-primary);font-weight:600}
+
+  /* OVERVIEW PROSE */
+  .overview-prose p{font-size:17px;color:var(--text-secondary);max-width:760px;margin-bottom:14px;line-height:1.7}
+  .overview-prose strong{color:var(--text-primary);font-weight:600}
+  .overview-prose em{color:var(--gold-bright);font-style:italic}
+
+  /* BOTTLENECK CARDS */
   .bot-grid{display:grid;grid-template-columns:1fr;gap:22px;margin-top:32px}
   .bot-card{padding:36px 32px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;backdrop-filter:blur(12px)}
   .bot-card .impact-tag{display:inline-block;padding:5px 12px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:2px;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-  .bot-card .num{font-family:'Cormorant Garamond',serif;font-size:48px;color:var(--gold);font-weight:600;line-height:1;display:inline-block;margin-right:14px;vertical-align:baseline}
-  .bot-card h3{font-size:23px;color:var(--text-primary);display:inline-block;vertical-align:baseline;max-width:calc(100% - 70px)}
+  .bot-num{font-family:'Cormorant Garamond',serif;font-size:52px;color:var(--gold);font-weight:600;line-height:1;display:inline-block;margin-right:14px;vertical-align:baseline}
+  .bot-card h3{font-size:24px;color:var(--text-primary);display:inline-block;vertical-align:baseline}
   .bot-card p{color:var(--text-secondary);font-size:15px;line-height:1.7;margin-top:14px;margin-bottom:14px}
   .cost-callout{margin-top:18px;padding:18px 22px;background:var(--loss-soft);border-left:3px solid var(--loss-red);border-radius:2px;line-height:1.65}
-  .cost-callout .cost-label{display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--loss-red-bright);margin-bottom:8px;font-weight:600}
-  .cost-callout p{color:#d8a8a8;font-size:14px;margin:0;line-height:1.7}
+  .cost-label{display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--loss-red-bright);margin-bottom:8px;font-weight:600}
+  .cost-callout p{color:#d0a0a0;font-size:14px;margin:0;line-height:1.7}
   .cost-callout strong{color:var(--loss-red-bright);font-weight:600}
-  .future-pace{margin-top:14px;padding-top:14px;border-top:1px solid rgba(220,64,64,0.18);font-size:13px;color:#e5b3b3;font-style:italic;line-height:1.65}
+  .future-pace{margin-top:14px;padding-top:14px;border-top:1px solid rgba(191,64,64,0.18);font-size:13px;color:#e0b8b8;font-style:italic;line-height:1.65}
   .future-pace strong{color:var(--loss-red-bright);font-weight:600;font-style:normal}
-  .future-pace .pace-label{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--loss-red-bright);font-weight:600;font-style:normal;display:inline-block;margin-right:6px}
-  .bot-card .impact{margin-top:18px;padding-top:18px;border-top:1px solid var(--border);font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-bright);font-style:italic;line-height:1.5}
-  .deliverable-featured{margin-top:32px;margin-bottom:18px;padding:0;background:var(--bg-card);border:1px solid var(--border-strong);border-radius:3px;backdrop-filter:blur(8px);overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr;gap:0;transition:all 0.3s ease;text-decoration:none}
-  @media(max-width:760px){.deliverable-featured{grid-template-columns:1fr}}
-  .deliverable-featured:hover{transform:translateY(-2px)}
-  .deliverable-featured .featured-thumb-wrap{position:relative;overflow:hidden;border-right:1px solid var(--border);min-height:240px;background:linear-gradient(135deg,#0e0e10,#050506)}
-  @media(max-width:760px){.deliverable-featured .featured-thumb-wrap{border-right:0;border-bottom:1px solid var(--border);min-height:200px}}
-  .deliverable-featured .featured-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(circle at center,rgba(212,175,108,0.12),transparent 60%)}
-  .deliverable-featured .featured-placeholder .pl-eyebrow{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:600}
-  .deliverable-featured .featured-placeholder .pl-title{font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--text-primary);line-height:1.3;max-width:280px}
-  .deliverable-featured .featured-placeholder .pl-title em{color:var(--gold);font-style:italic}
-  .deliverable-featured .featured-overlay{position:absolute;bottom:0;left:0;right:0;padding:10px 14px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.85));font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);text-align:center;font-weight:600}
-  .deliverable-featured .featured-info{padding:32px 30px;display:flex;flex-direction:column;justify-content:center}
-  .deliverable-featured .tag{display:inline-block;padding:4px 12px;background:var(--gold);color:var(--bg-deep);border-radius:2px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:14px;align-self:flex-start}
-  .deliverable-featured h3{font-size:26px;margin-bottom:12px;color:var(--text-primary);font-weight:500}
-  .deliverable-featured p{color:var(--text-secondary);font-size:14px;line-height:1.7;margin-bottom:18px}
-  .deliverable-featured .view-link{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-top:1px solid var(--border);padding-top:14px;margin-top:auto;align-self:flex-start;width:100%}
-  .deliverable-featured:hover .view-link{color:var(--gold-bright)}
-  .deliverables-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px;align-items:start;grid-auto-rows:min-content}
-  @media(max-width:900px){.deliverables-grid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:600px){.deliverables-grid{grid-template-columns:1fr}}
+  .bot-impact{margin-top:18px;padding-top:18px;border-top:1px solid var(--border);font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold-bright);font-style:italic;line-height:1.5}
+
+  /* VSL SECTION */
+  .vsl-wrap{margin-top:32px;padding:40px 32px;background:var(--bg-card);border:1px solid var(--border-strong);border-radius:3px;text-align:center}
+  .vsl-embed-wrap{width:100%;max-width:720px;aspect-ratio:16/9;margin:0 auto 22px;border-radius:3px;overflow:hidden;border:1px solid var(--border-strong)}
+  .vsl-embed-wrap iframe{width:100%;height:100%;display:block}
+  .vsl-caption{font-size:13px;color:var(--text-muted);font-style:italic;letter-spacing:0.04em;margin-top:10px}
+
+  /* DELIVERABLES */
+  .del-featured{margin-top:32px;padding:0;background:var(--bg-card);border:1px solid var(--border-strong);border-radius:3px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;gap:0;transition:all 0.3s ease;text-decoration:none}
+  @media(max-width:760px){.del-featured{grid-template-columns:1fr}}
+  .del-featured:hover{transform:translateY(-2px)}
+  .del-thumb{display:flex;align-items:center;justify-content:center;width:100%;min-height:220px;aspect-ratio:16/10;padding:32px;text-align:center;background:linear-gradient(135deg,#121416,#07080A)}
+  .del-thumb .dt-eyebrow{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:600}
+  .del-thumb .dt-headline{font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--text-primary);line-height:1.2;margin-bottom:10px}
+  .del-thumb .dt-sub{font-size:11px;letter-spacing:0.08em;color:var(--text-muted);font-style:italic}
+  .del-info{padding:32px 28px;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--border)}
+  @media(max-width:760px){.del-info{border-left:0;border-top:1px solid var(--border)}}
+  .del-info .tag{display:inline-block;padding:4px 12px;background:var(--gold);color:#000;border-radius:2px;font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:14px;align-self:flex-start}
+  .del-info h3{font-size:24px;margin-bottom:12px;color:var(--text-primary);font-weight:500}
+  .del-info p{color:var(--text-secondary);font-size:14px;line-height:1.7;margin-bottom:18px}
+  .del-info .view-link{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border-top:1px solid var(--border);padding-top:14px;margin-top:auto}
+  .del-featured:hover .view-link{color:var(--gold-bright)}
+
+  .del-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+  @media(max-width:900px){.del-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:580px){.del-grid{grid-template-columns:1fr}}
   .del-card{padding:26px 22px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;backdrop-filter:blur(8px);transition:all 0.3s ease;display:flex;flex-direction:column}
   .del-card:hover{border-color:var(--border-strong);transform:translateY(-2px)}
   .del-card .tag{display:inline-block;padding:3px 10px;background:var(--accent-soft);border:1px solid var(--border);border-radius:2px;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;align-self:flex-start}
-  .del-card h3{font-size:19px;margin-bottom:10px;color:var(--text-primary);font-weight:500}
-  .del-card p{color:var(--text-muted);font-size:13px;line-height:1.55;margin-bottom:16px;flex-grow:1}
-  .del-card a{color:var(--gold);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-top:1px solid var(--border);padding-top:14px;margin-top:auto}
-  .del-card a:hover{color:var(--gold-bright)}
-  .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px;max-width:1080px;margin-left:auto;margin-right:auto}
-  @media(max-width:760px){.comparison-grid{grid-template-columns:1fr}}
-  .comp-col{padding:32px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px}
-  .comp-col.now{border-color:var(--border-strong);background:linear-gradient(135deg,var(--bg-card),var(--accent-soft))}
-  .comp-col .comp-label{display:block;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;font-weight:600}
-  .comp-col h3{font-size:21px;margin-bottom:18px;color:var(--text-primary)}
-  .comp-col ul{list-style:none;padding:0;margin:0}
-  .comp-col li{padding:9px 0;color:var(--text-secondary);font-size:14px;border-bottom:1px solid var(--border);line-height:1.55;display:flex;gap:10px}
-  .comp-col li:last-child{border-bottom:0}
-  .comp-col li::before{content:"\2713";color:var(--gold);font-weight:bold;flex-shrink:0}
-  .comp-col.now li::before{color:var(--gold-bright)}
-  .comp-col.future li::before{content:"\2192";color:var(--gold)}
-  .phases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:32px}
-  @media(max-width:760px){.phases-grid{grid-template-columns:1fr}}
-  .phase-card{padding:30px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;display:flex;flex-direction:column}
-  .phase-card.first{border-color:var(--border-strong);background:linear-gradient(135deg,var(--bg-card),var(--accent-soft))}
-  .phase-card .phase-meta{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
-  .phase-card .phase-name{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--gold);text-transform:uppercase;letter-spacing:0.16em;font-weight:600}
-  .phase-card .phase-weeks{font-size:11px;color:var(--text-muted);letter-spacing:0.12em;text-transform:uppercase}
-  .phase-card.first .phase-weeks{color:var(--gold-bright);font-weight:600}
-  .phase-card h3{font-size:22px;margin-bottom:14px;color:var(--text-primary)}
-  .phase-card ul{list-style:none;padding:0;margin:0;flex-grow:1}
-  .phase-card li{padding:7px 0;color:var(--text-secondary);font-size:14px;border-bottom:1px solid var(--border);line-height:1.5}
-  .phase-card li:last-child{border-bottom:0}
-  .phase-card li::before{content:"\00B7";color:var(--gold);margin-right:10px;font-weight:bold}
-  .revenue-cta{display:block;margin-top:18px;padding:16px 22px;background:var(--gold);color:var(--bg-deep);border-radius:2px;font-size:14px;font-weight:700;letter-spacing:0.04em;text-align:center;text-decoration:none;transition:all 0.3s ease;box-shadow:0 8px 20px rgba(212,175,108,0.18)}
-  .revenue-cta:hover{background:var(--gold-bright);transform:translateY(-2px);box-shadow:0 12px 28px rgba(212,175,108,0.28)}
-  .revenue-cta .arrow{margin-left:6px}
-  .creds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px}
-  @media(max-width:900px){.creds-grid{grid-template-columns:1fr}}
-  .cred-card{padding:36px 28px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px;text-align:center}
-  .cred-card.headline-result{border-color:var(--border-strong);background:linear-gradient(135deg,var(--bg-card),var(--accent-soft))}
-  .cred-card .cred-headline{font-family:'Cormorant Garamond',serif;font-size:34px;color:var(--gold);font-weight:600;line-height:1.1;margin-bottom:10px}
-  .cred-card.headline-result .cred-headline{font-size:42px;color:var(--gold-bright)}
-  .cred-card .cred-meta{font-size:12px;color:var(--text-muted);letter-spacing:0.06em;margin-bottom:14px;text-transform:uppercase}
-  .cred-card .cred-detail{font-size:13px;color:var(--text-secondary);line-height:1.65}
-  .cred-card .cred-detail strong{color:var(--text-primary)}
-  .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px;max-width:1080px;margin-left:auto;margin-right:auto}
-  @media(max-width:760px){.proof-grid{grid-template-columns:1fr}}
-  .proof-card{padding:14px;background:var(--bg-card);border:1px solid var(--border-strong);border-radius:3px;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,0.3)}
-  .proof-card img{width:100%;height:auto;border-radius:2px;display:block;margin-bottom:14px}
-  .proof-card .proof-caption{font-size:13px;color:var(--text-secondary);font-style:italic;line-height:1.55;padding:0 10px 10px;margin:0}
-  .proof-card .proof-caption strong{color:var(--gold-bright);font-weight:600;font-style:normal}
-  .proof-callout{margin:24px auto 0;padding:14px 22px;text-align:center;font-size:12px;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;max-width:680px}
-  .trust-strip{margin-top:36px;padding:22px 24px;background:var(--bg-elev);border:1px solid var(--border);border-radius:3px;text-align:center;max-width:1080px;margin-left:auto;margin-right:auto}
-  .trust-strip .trust-label{display:block;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px}
-  .trust-strip .trust-clients{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--text-secondary);font-style:italic;line-height:1.55}
-  .trust-strip .trust-clients span{color:var(--gold);font-style:normal;font-weight:500;margin:0 4px}
-  .trust-strip .trust-clients .sep{color:var(--text-muted);margin:0 8px}
-  .ownership-line{margin-top:24px;padding:14px 20px;text-align:center;font-size:13px;color:var(--text-muted);font-style:italic;max-width:780px;margin-left:auto;margin-right:auto}
-  .client-quote{margin-top:48px;padding:36px 32px;border-left:3px solid var(--gold);background:var(--accent-soft);max-width:780px;margin-left:auto;margin-right:auto}
-  .client-quote p{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--text-primary);font-style:italic;line-height:1.45}
-  .client-quote .attribution{margin-top:14px;font-size:13px;color:var(--text-muted);font-style:normal;font-family:'Inter',sans-serif}
-  .cta-section{text-align:center;padding:90px 0 100px;background:linear-gradient(180deg,transparent,rgba(20,20,24,0.6),transparent);margin-top:40px;border-top:1px solid var(--border)}
-  .cta-section h2{margin-bottom:22px;max-width:720px;margin-left:auto;margin-right:auto}
-  .cta-section p{color:var(--text-secondary);font-size:17px;max-width:580px;margin:0 auto 36px;line-height:1.6}
-  .cta-buttons{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;align-items:center}
-  .cta-secondary-link{color:var(--text-secondary);font-size:14px;text-decoration:underline;text-decoration-color:var(--border-strong)}
-  .cta-secondary-link:hover{color:var(--gold)}
-  footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-muted);font-size:13px}
-  footer .signoff{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--text-secondary);margin-bottom:14px;max-width:680px;margin-left:auto;margin-right:auto}
-  footer .meta{font-size:12px;color:var(--text-muted);letter-spacing:0.04em}
-  footer .disclaimer{margin-top:14px;font-size:11px;color:var(--text-muted);font-style:italic;max-width:780px;margin-left:auto;margin-right:auto;line-height:1.6}
+  .del-card h3{font-size:18px;margin-bottom:10px;color:var(--text-primary);font-weight:500}
+  .del-card p{color:var(--text-muted);font-size:13px;line-height:1.55;margin-bottom:0;flex-grow:1}
+
+  /* FOUNDER CARD */
+  .founder-card{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:start;padding:40px 36px;background:var(--bg-card);border:1px solid var(--border-strong);border-radius:3px;margin-top:32px}
+  @media(max-width:680px){.founder-card{grid-template-columns:1fr;gap:22px}}
+  .founder-photo{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,#1C1F24,#111316);border:2px solid var(--border-strong);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .founder-photo .monogram{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:var(--gold);letter-spacing:0.04em}
+  /* SWAP-SLOT: Replace .founder-photo monogram with IMG-TAG src=[andrei-headshot-url]
+     Day-1. Portrait minimum 88x88. Source: Instagram @andre.g1 profile or case study reels. */
+  .founder-body h3{font-size:22px;margin-bottom:6px;color:var(--text-primary)}
+  .founder-body .founder-title{font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:600}
+  .founder-body p{font-size:15px;color:var(--text-secondary);line-height:1.7;margin-bottom:12px}
+  .founder-body .proof-stat{display:inline-block;padding:6px 14px;background:var(--accent-soft);border:1px solid var(--border);border-radius:2px;font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.08em;margin-right:8px;margin-bottom:8px}
+
+  /* OUTCOME GRID */
+  .outcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+  @media(max-width:760px){.outcome-grid{grid-template-columns:1fr}}
+  .outcome-card{padding:28px 24px;background:var(--bg-card);border:1px solid var(--border);border-radius:3px}
+  .outcome-card .oc-num{font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--gold);font-weight:600;line-height:1;margin-bottom:8px}
+  .outcome-card h4{font-size:16px;color:var(--text-primary);margin-bottom:10px;font-weight:500}
+  .outcome-card p{font-size:13px;color:var(--text-muted);line-height:1.6}
+
+  /* BOTTOM CTA */
+  .bottom-cta{padding:80px 0;text-align:center;border-top:1px solid var(--border)}
+  .bottom-cta h2{font-size:clamp(28px,3.5vw,44px);margin-bottom:16px}
+  .bottom-cta h2 em{color:var(--gold);font-style:italic}
+  .bottom-cta p{font-size:17px;color:var(--text-secondary);max-width:580px;margin:0 auto 36px;line-height:1.65}
+
+  /* FOOTER */
+  footer{padding:28px 0;border-top:1px solid rgba(212,168,75,0.10);text-align:center}
+  .footer-text{font-size:11px;color:var(--text-muted);letter-spacing:0.04em;line-height:1.7;max-width:680px;margin:0 auto}
+  .footer-text a{color:var(--gold)}
+
+  /* UTILS */
+  .centered{text-align:center;margin-left:auto;margin-right:auto}
+  .divider{height:1px;background:var(--border);margin:0}
 </style>
 </head>
 <body>
+
+<!-- NAV -->
 <nav>
-<div class="nav-inner">
-<div class="logo">AG1 Consulting</div>
-<a href="#book" class="nav-cta">Next Step</a>
-</div>
+  <div class="nav-inner">
+    <div class="logo">AG1 <span>Consulting</span></div>
+    <a href="https://calendly.com/ag-copy/call-with-andrei" class="nav-cta">Walk the Plan</a>
+  </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-<div class="container">
-<div class="eyebrow">For Adam Bensman - Three Things + Install</div>
-<h1>AG1 Prepared for Adam - Three Things I Would Build</h1>
-<h2>Built before the post-TAMKO transition window closes, <em>three things ranked by revenue impact</em></h2>
-<a href="https://andrei170.github.io/adam-bensman-landing/" class="cta-primary">View The Sample Cohort Page &rarr;</a>
-<p class="brand-side-note">Side note, built in AG1 brand colours since the cohort lives on theroofstrategist.com (your owned funnel) rather than strongbytamko.com (TAMKO-owned), and the right palette decision between legacy Roof Strategist trades-tone, the Roofing STRONG Alliance red and white, and a cohort-specific palette is one of the small Day-1 fixes once you confirm preference.</p>
-</div>
+  <div class="container">
+    <div class="eyebrow">Built for Adam Bensman &middot; @roofstrategist &middot; Warm Reentry</div>
+    <h1>Three things I would build differently<br><em>before the post-TAMKO window closes.</em></h1>
+    <p class="hero-sub">The course catalogue is fully operational. The cohort tier between the courses and the Roofing STRONG Alliance is not. That is the single sharpest wedge in the funnel right now.</p>
+    <div class="hero-meta">
+      <span>May 2026</span>
+      <span>&middot;</span>
+      <span>AG1 Consulting Ltd</span>
+      <span>&middot;</span>
+      <span>Built in less than 7 days</span>
+    </div>
+    <a href="https://andrei170.github.io/adam-bensman-landing/" class="cta-primary">View the Sample Roofing Sales Cohort Page</a>
+    <p class="hero-trust">No pitch on the call. We walk the plan, you decide.</p>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <div class="stat-num">13+</div>
+          <div class="stat-label">Years operating in roofing sales</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">50+</div>
+          <div class="stat-label">US states running the Sales System</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">$440K</div>
+          <div class="stat-label">Year-1 floor, three installs stacked</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">7</div>
+          <div class="stat-label">Days to full install from kickoff</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent,rgba(212,175,108,.025) 50%,transparent)">
-<div class="container">
-<div class="section-eyebrow">The Three Things</div>
-<h2 class="section-title">What I would build differently, <em>ranked by revenue impact.</em></h2>
-<p class="section-sub">The Marketing Battle Pack at $347, the Complete Sales Strategy, and Build Your Dream Team are the productised course tier on theroofstrategist.com. The Roofing STRONG Alliance by TAMKO is the application-only community at strongbytamko.com post-acquisition. The productised mentorship cohort layer between them is missing. The segmenting scorecard is the second wedge. The post-acquisition cross-sell architecture is the third. <strong>Full install ships in less than 7 days from kickoff.</strong> <strong>Money in the bank inside the first cohort cycle.</strong></p>
-
-<div class="bot-grid">
-<div class="bot-card">
-<span class="impact-tag">Highest Revenue Lever</span>
-<div><span class="num">01</span><h3>The Mentorship Cohort Layer Between The Courses And The Alliance Is Missing</h3></div>
-<p>The Roof Strategist course catalogue ships at $347 / mid-band / owner-band. The Roofing STRONG Alliance is the high-touch contractor community at strongbytamko.com. The layer between them is not built. A "STRONG Operator Cohort" (working name, leans on the post-rename brand asset - The STRONG Roofer YouTube channel + Roofing STRONG Alliance both carry the same naming convention) sits at mid-tier mentorship pricing, 25-seat cap, 8 weeks, application-only, weekly live group call with you, biweekly office hours. Four modules walked in order: D2D and storm-damage closing systems, recruiting and retention, branch P and L plus ops, personal-brand and content compounding. The Build Your Dream Team material is the course version; the cohort is the install version. <strong>4 cycles per year x 25 seats x $3K-$8K average = $300-800K direct Year-1</strong>, with cohort grads routing into the alliance application as the natural high-touch back-end (TAMKO-owned, but you-led), or back to 1-1 consulting for the $5MM-$13MM operator band. Time cost on you is weekly group call plus office hours during cycles, not new content production.</p>
-<div class="cost-callout">
-<span class="cost-label">Cost of Waiting</span>
-<p><strong>~$75-200K per cohort cycle</strong> not collected. Each quarter the cohort layer does not exist is one cycle missed. The Build Your Dream Team buyers continue to graduate without a paid upgrade tier. The post-TAMKO transition window is the right moment because attention is on the brand handoff and the audience is paying attention.</p>
-<p class="future-pace"><span class="pace-label">6 months from now -</span><strong>~$150-400K</strong> in cohort revenue never collected, plus the alliance application stays at zero cohort-grad-feed.</p>
-</div>
-<div class="impact">Fix - The STRONG Operator Cohort, standard tier / standard-plus-operating-review tier. Year-1 floor $300-800K direct plus incremental alliance-application volume plus course-catalogue feeder uplift.</div>
-</div>
-
-<div class="bot-card">
-<span class="impact-tag">Fast Install</span>
-<div><span class="num">02</span><h3>No Segmenting Quiz Lead Magnet On The Front End</h3></div>
-<p>The FREE Roof Claims Crash Course captures email at signup as a 30-plus video library. It does not segment by buyer type (rep / elite-rep / owner / storm-specialist), revenue band, or primary bottleneck (closing / recruiting / ops / marketing). Every email subscriber gets the same nurture sequence regardless of whether they are a brand-new rep buying the Marketing Battle Pack or a $4M operator ready to enrol in the cohort. <strong>A "Roofing Operator Score" 12-question scorecard (current role, current monthly revenue, current team size, current closing ratio, current recruiting cadence, current retention rate, primary lead source, current marketing spend, primary bottleneck self-rated, current training stack, AOV on jobs, storm-vs-retail mix in. 0-100 score + 3-line bottleneck readout + email + segmentation tags out)</strong> turns the warm content viewer into a tagged subscriber. 5-8% audience-to-quiz floor on a multi-tens-of-thousands warm audience across YouTube + podcast + IG + TikTok = 3-6K scorecard completions in 90 days, 60-75% convert to email = 2-4.5K incremental email subscribers from existing audience inside 90 days, 5-11K inside 6 months.</p>
-<div class="cost-callout">
-<span class="cost-label">Cost of Waiting</span>
-<p><strong>~$5-15K/mo</strong> in nurture-driven course + cohort revenue not happening - <strong>~$60-180K/yr</strong> compounding for life of the list you do not have. By the time the cohort opens without the email asset, every seat costs more to fill via raw audience reach.</p>
-<p class="future-pace"><span class="pace-label">6 months from now -</span><strong>~$30-90K</strong> never captured plus the email list is 6 months smaller than it should be when the cohort opens.</p>
-</div>
-<div class="impact">Fix - Roofing Operator Score on ScoreApp / Typeform. 2-4.5K incremental subscribers in 90 days. $60-180K Year-1 lift. Compounds for life of the list.</div>
-</div>
-
-<div class="bot-card">
-<span class="impact-tag">Compound Friction</span>
-<div><span class="num">03</span><h3>The Post-Acquisition Cross-Sell Between theroofstrategist.com And strongbytamko.com Is Unbuilt</h3></div>
-<p>On May 13, TAMKO acquired RSRA's assets and relaunched as the Roofing STRONG Alliance by TAMKO, with you continuing to lead and an expanded TAMKO role at the same time. The alliance now lives at strongbytamko.com. The course storefront lives at theroofstrategist.com. The YouTube channel renamed to The STRONG Roofer. The IG, TikTok, and short-form handles stay at @roofstrategist. Today the two surfaces operate as separate brand entities. The alliance founding story mentions you. The course storefront mentions the alliance. The cross-sell architecture - the routing path that takes a cohort grad into the alliance application, or that takes an alliance member into the course catalogue + cohort feeder - is not visibly productised on either surface. <strong>The fix is not to dismantle either surface. The fix is to architect the routing.</strong> Storefront-side cross-sell is fully under your control. Alliance-side cross-sell needs TAMKO-team coordination during the integration window. The work is brand-architecture, not new content production.</p>
-<div class="cost-callout">
-<span class="cost-label">Cost of Waiting</span>
-<p><strong>~$7-20K/mo</strong> in cross-sell economics not happening between the storefront and the alliance - conservatively 5-15% of cohort-fit operators and alliance-fit contractors who currently have no clean routing path. <strong>~$80-250K/yr</strong> at compounding cycle cadence. The post-acquisition window is fresh for 90 days, not 12 months.</p>
-<p class="future-pace"><span class="pace-label">6 months from now -</span><strong>~$40-125K</strong> in cross-sell revenue not captured, plus the post-acquisition integration is no longer fresh and the cross-sell will feel retrofit rather than aligned.</p>
-</div>
-<div class="impact">Fix - Cross-sell architecture across both surfaces. Bio-link router updates on every handle. Tier-clarified funnel on each surface. Cross-sell CTAs planted into the post-cohort survey + the post-purchase course flows. $80-250K Year-1 attributable lift.</div>
-</div>
-</div>
-</div>
-</section>
-
+<!-- OVERVIEW -->
 <section>
-<div class="container">
-<h2 class="section-title">Three things. <em>One install plan to ship them.</em></h2>
-<div class="overview-prose">
-<p>Spent the morning re-studying theroofstrategist.com (the course storefront), the Roof Strategist Podcast feed across Apple / Spotify / Audible / Amazon, the YouTube catalogue post-rename to The STRONG Roofer, <strong>@roofstrategist</strong> on IG plus TikTok, and the strongbytamko.com handoff after the May 13 TAMKO acquisition. Three things I would build differently, ranked by revenue impact. <strong>Full install ships in less than 7 days from kickoff. Money in the bank inside the first cohort cycle.</strong> Seven deliverables already built so you can read at your own pace.</p>
-<p>The Roof Strategist is built (13+ years operating, Sales System in all 50 states plus Canada plus Australia plus Sweden, Owens Corning Official Sales Training Partner, Marketing Battle Pack at $347, Complete Sales Strategy, Build Your Dream Team, Roofing Sales Survival Guide on Amazon). The alliance is now a TAMKO-owned asset (Roofing STRONG Alliance by TAMKO, application-only, free for TAMKO Edge contractors, you continuing to lead). The audience is bigger than the cohort layer was built for. What is missing is the productised mentorship layer between the courses and the alliance. The cohort is the rebuild, at the right shape and at the right timing. Results vary, dependent on cohort fill rate and operator inputs.</p>
-</div>
-<div class="stats-grid">
-<div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Things Mapped</div></div>
-<div class="stat-item"><div class="stat-num">7</div><div class="stat-label">Deliverables</div></div>
-<div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Phases</div></div>
-<div class="stat-item"><div class="stat-num">&lt; 7 Days</div><div class="stat-label">Full Install</div></div>
-<div class="stat-item"><div class="stat-num">Day 7</div><div class="stat-label">Revenue Live</div></div>
-</div>
-</div>
+  <div class="container-narrow">
+    <div class="section-eyebrow">The read</div>
+    <h2 class="section-title">The operating businesses are healthy.<br><em>The cohort tier is the gap.</em></h2>
+    <div class="overview-prose">
+      <p>You started in D2D in 2011. Built into the COO chair at a multi-state $8MM/yr restoration company. Founded The Roof Strategist. Built the Sales System into all 50 US states plus Canada, Australia, and Sweden. Named Official Sales Training Partner for Owens Corning. Authored The Roofing Sales Survival Guide. Founded the Roofing and Solar Reform Alliance, which TAMKO acquired on May 13 and relaunched as the Roofing STRONG Alliance with you continuing to lead and an expanded TAMKO role at the same time.</p>
+      <p>The course storefront is fully operational. The Marketing Battle Pack ships at $347. Complete Sales Strategy and Build Your Dream Team layer up from there. The alliance is live. The YouTube channel, the podcast, the blog network, the TikTok short-form with the SMS demo mechanic - all running.</p>
+      <p><strong>What is not running: the productised mentorship cohort between the courses and the Roofing STRONG Alliance application.</strong> The elite reps earning $250K-$500K in commission and the $1MM-$13MM roofing company owners who follow the brand for the team-build and ops content have no live group cohort with you on the call to enrol into today.</p>
+      <p>The post-acquisition window is the right moment. Your attention is on the brand handoff. <em>The install partner who handles the front-end is the right shape of help in this exact window.</em></p>
+    </div>
+  </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent,rgba(212,175,108,.025) 50%,transparent)">
-<div class="container">
-<div class="section-eyebrow">The Deliverables</div>
-<h2 class="section-title">Everything I built for you, <em>in one place.</em></h2>
-<p class="section-sub">Seven deliverables. The working assets are ready to install; the strategy docs explain the why. Sample Cohort Landing Page is the headliner, everything else feeds it.</p>
+<div class="divider"></div>
 
-<a href="https://andrei170.github.io/adam-bensman-landing/" target="_blank" class="deliverable-featured">
-<div class="featured-thumb-wrap">
-<div class="featured-placeholder">
-<span class="pl-eyebrow">The STRONG Operator Cohort - Sample Landing</span>
-<span class="pl-title">The Roof Strategist courses are the pre-sell. <em>The cohort is the install.</em></span>
-</div>
-<div class="featured-overlay">Click to View Live Preview</div>
-</div>
-<div class="featured-info">
-<span class="tag">Working Asset</span>
-<h3>Sample Cohort Landing Page</h3>
-<p>HTML, mobile-responsive, ready to deploy. The STRONG Operator Cohort offer page with the 10-Second-Pitch flagship YouTube embed and Typeform application live. This is the headliner of the package, everything else feeds it.</p>
-<span class="view-link">View Full Page &rarr;</span>
-</div>
-</a>
-
-<div class="deliverables-grid">
-<div class="del-card">
-<span class="tag">Phase 1</span>
-<h3>VSL Preview Script</h3>
-<p>90-second preview cut + production notes + the full 5-7 minute custom landing-page VSL spec for Day 1-3 of install.</p>
-<a href="vsl-preview.md" target="_blank">Open &rarr;</a>
-</div>
-
-<div class="del-card">
-<span class="tag">Phase 1+2</span>
-<h3>Email Sequences</h3>
-<p>Cold first-touch sequence to you, plus the production assets: 14-day welcome flow, 7-touch cohort pre-sell, 4-touch post-application, post-cohort routing.</p>
-<a href="email-sequence.md" target="_blank">Open &rarr;</a>
-</div>
-
-<div class="del-card">
-<span class="tag">Phase 3</span>
-<h3>Content Strategy</h3>
-<p>Three content lanes (Module Drops, Long-Form Podcast Pre-Sell, Operator Reads). 40-hook bank. Long-form plan. Photoshoot brief.</p>
-<a href="content-strategy.md" target="_blank">Open &rarr;</a>
-</div>
-
-<div class="del-card">
-<span class="tag">Lead Doc</span>
-<h3>Bottleneck Analysis</h3>
-<p>Three things I would build differently. Year-1 floor math. Stacked outcome table.</p>
-<a href="bottleneck-analysis.md" target="_blank">Open &rarr;</a>
-</div>
-
-<div class="del-card">
-<span class="tag">Foundation</span>
-<h3>Copy Strategy</h3>
-<p>Voice, brand pillars, avatars, headline bank, the framing AG1 will write to.</p>
-<a href="copy-strategy.md" target="_blank">Open &rarr;</a>
-</div>
-
-<div class="del-card">
-<span class="tag">Architecture</span>
-<h3>Funnel Blueprint</h3>
-<p>Full funnel diagram, phase mapping, tech stack, integration points, risk + mitigation.</p>
-<a href="funnel-blueprint.md" target="_blank">Open &rarr;</a>
-</div>
-
-<div class="del-card">
-<span class="tag">Source</span>
-<h3>Research File</h3>
-<p>Identity, audience, current offer stack, the missing cohort layer read, post-acquisition timing note, sensitivities.</p>
-<a href="research.md" target="_blank">Open &rarr;</a>
-</div>
-</div>
-</div>
-</section>
-
+<!-- BOTTLENECK CARDS -->
 <section>
-<div class="container">
-<div class="section-eyebrow">Already Done - Versus Day 1</div>
-<h2 class="section-title">What is already built. <em>Versus what gets shipped during the install.</em></h2>
-<p class="section-sub">Most of the strategy is done. The install is execution against a plan we have already mapped, not a discovery from scratch.</p>
+  <div class="container">
+    <div class="section-eyebrow">Three things ranked by revenue impact</div>
+    <h2 class="section-title">All install in <em>less than 7 days</em> from kickoff.<br>Money in the bank inside the first cohort cycle.</h2>
+    <p class="section-sub">The sharpest is number one. The other two compound the first. None require net-new content. The work is architecture, not creation from scratch.</p>
 
-<div class="comparison-grid">
-<div class="comp-col now">
-<span class="comp-label">Already in This Package - Day 0</span>
-<h3>Strategy + Working Assets</h3>
-<ul>
-<li>Three things ranked by revenue impact, with Year-1 floor math</li>
-<li>The STRONG Operator Cohort landing page (HTML, deploy-ready)</li>
-<li>VSL preview script + production notes</li>
-<li>Email sequences (cold first-touch, welcome, pre-cohort, post-application, post-cohort routing)</li>
-<li>Content strategy + 40-hook bank + photoshoot brief</li>
-<li>Funnel blueprint + tech stack mapped</li>
-<li>Copy strategy + voice + headline bank</li>
-<li>Bottleneck analysis with Year-1 floor math</li>
-<li>Research file + sensitivity profile + post-acquisition timing note</li>
-</ul>
-</div>
-<div class="comp-col future">
-<span class="comp-label">Shipped Live - Days 1-7</span>
-<h3>Funnel Goes Live</h3>
-<ul>
-<li>The STRONG Operator Cohort landing page deployed (Day 1-3)</li>
-<li>"What The Cohort Is" 5-7 min VSL filmed and embedded (Day 1-3)</li>
-<li>Stripe + payment + email auto-trigger live (Day 2-3)</li>
-<li>Roofing Operator Score scorecard live (Day 4-5)</li>
-<li>Brand colours locked to your palette (Day 1)</li>
-<li>Bio-link router updated across @roofstrategist (IG + TikTok) / The STRONG Roofer YouTube / LinkedIn / Facebook (Day 5)</li>
-<li>14-day welcome + 7-touch pre-cohort + 4-touch post-app + post-cohort flows (Day 6-7)</li>
-<li>Cross-sell architecture audit + handoff doc (Day 7)</li>
-</ul>
-</div>
-</div>
-</div>
+    <div class="bot-grid">
+
+      <!-- BOTTLENECK 1 -->
+      <div class="bot-card">
+        <div class="impact-tag">Highest revenue lever</div>
+        <div>
+          <span class="bot-num">01</span>
+          <h3>The mid-tier mentorship cohort layer between the courses and the alliance is missing</h3>
+        </div>
+        <p>The Marketing Battle Pack, Complete Sales Strategy, and Build Your Dream Team are the course versions of the promise. The cohort is the install version. Eight weeks, 25-seat cap, application-only, weekly live group call with you, biweekly office hours, private community channel for the duration. Four modules walked in order: D2D and storm-damage closing systems (the Sales System operationalised at cohort depth), recruiting and retention for the sales team (the Build Your Dream Team material walked live), branch P&amp;L and ops for the $1MM-$13MM operator, personal-brand and content compounding for the sales-leader.</p>
+        <p>Working name: <strong>The STRONG Operator Cohort</strong> (leans on the existing brand naming post-rename - The STRONG Roofer channel and the Roofing STRONG Alliance share the same naming convention). Mid-tier mentorship pricing, two tiers. 4 cycles per year. Cohort grads who qualify route into the Roofing STRONG Alliance application as the natural high-touch back-end. The cohort feeds the alliance; it does not compete with it.</p>
+        <div class="cost-callout">
+          <span class="cost-label">Cost of waiting</span>
+          <p>4 cohort cycles per year x 25 seats x mid-tier mentorship range = <strong>$300K-$800K direct Year-1 not yet collected.</strong> Each quarter the cohort does not exist is one cycle missed and one group of Build Your Dream Team buyers who graduated without a paid upgrade tier to enrol into.</p>
+          <div class="future-pace"><strong>Six months from now:</strong> $150K-$400K in cohort revenue never collected. The Build Your Dream Team buyers continue to exit the funnel with no productised upgrade above the course tier.</div>
+        </div>
+        <div class="bot-impact">"The Sales System is the pre-sell. The cohort is the install."</div>
+      </div>
+
+      <!-- BOTTLENECK 2 -->
+      <div class="bot-card">
+        <div class="impact-tag">Fast install</div>
+        <div>
+          <span class="bot-num">02</span>
+          <h3>No segmenting quiz lead magnet on the front end</h3>
+        </div>
+        <p>The FREE Roof Claims Crash Course captures email at signup but does not segment the audience by buyer type (rep / elite-rep / owner / storm-specialist), revenue band ($0-$500K through $13M+), or primary bottleneck (closing / recruiting / ops / marketing). Every subscriber gets the same nurture sequence regardless of whether they are a new rep buying the Marketing Battle Pack or a $4M operator ready to enrol in the cohort.</p>
+        <p>A <strong>Roofing Operator Score</strong> 12-question scorecard solves this in one move. Viewer enters current role, monthly revenue, team size, closing ratio, recruiting cadence, retention rate, primary lead source, marketing spend, primary bottleneck, training stack, average job value, and storm vs retail mix. Returns a 0-100 score, a 3-line bottleneck readout, and a segmented upgrade-path route. Email captures at the result. Drops into the podcast end-roll, the @roofstrategist IG bio-link router, the TikTok caption stack alongside the existing SMS demo mechanic, the YouTube descriptions, and the LinkedIn header.</p>
+        <div class="cost-callout">
+          <span class="cost-label">Cost of waiting</span>
+          <p>5-8% audience-to-quiz floor on a multi-tens-of-thousands warm audience across YouTube, podcast, IG, and TikTok = 3K-6K scorecard completions in 90 days. 60-75% convert to email at the result = <strong>2K-4.5K incremental email subscribers from existing audience in 90 days.</strong> $60K-$180K Year-1 nurture-driven lift, compounds for life of the list.</p>
+          <div class="future-pace"><strong>Six months from now:</strong> $30K-$90K never captured. The email list is six months smaller than it should be when the cohort opens for its first cycle.</div>
+        </div>
+        <div class="bot-impact">"12 questions. 90 seconds. One number, three bottlenecks, one route out."</div>
+      </div>
+
+      <!-- BOTTLENECK 3 -->
+      <div class="bot-card">
+        <div class="impact-tag">Compound pickup - window is 90 days</div>
+        <div>
+          <span class="bot-num">03</span>
+          <h3>The post-acquisition cross-sell between the course storefront and the alliance is unbuilt</h3>
+        </div>
+        <p>On May 13, TAMKO acquired RSRA's assets and relaunched as the Roofing STRONG Alliance by TAMKO with you continuing to lead. The alliance lives at strongbytamko.com. The course storefront lives at theroofstrategist.com. Today the two surfaces operate as separate brand entities. A Build Your Dream Team buyer running a $3M roofing company is a Roofing STRONG Alliance application candidate, but there is no clean routing path from the course product to the alliance application. A Roofing STRONG Alliance member joining for the TAMKO Edge contractor program is a cohort candidate and a Complete Sales Strategy buyer, but there is no clean routing path from the alliance back to the owned course catalogue.</p>
+        <p>The post-acquisition window is the right moment because attention is on the brand handoff and the audience is paying attention. In 12-18 months the integration will be settled and the cross-sell will feel retrofit rather than aligned. <strong>The work is brand-architecture, not net-new content production.</strong></p>
+        <div class="cost-callout">
+          <span class="cost-label">Cost of waiting</span>
+          <p>Cross-sell economics in a multi-brand operation of this scale typically add <strong>5-15% incremental revenue</strong> from clean tier-clarity post-acquisition. Applied to the combined course catalogue, cohort, and alliance-application volume, the cross-sell variant adds $80K-$250K Year-1.</p>
+          <div class="future-pace"><strong>Six months from now:</strong> Another six months of Build Your Dream Team buyers exiting without an alliance handoff, and alliance members exiting without a cohort or course-catalogue handoff. The post-acquisition window is not permanent.</div>
+        </div>
+        <div class="bot-impact">"The cohort feeds the alliance. The alliance does not absorb the cohort."</div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- STACKED OUTCOME -->
 <section>
-<div class="container">
-<div class="section-eyebrow">Implementation</div>
-<h2 class="section-title">Four phases. <em>Built to compound.</em></h2>
-<p class="section-sub"><strong>Phases 1-2 ship in less than 7 days from kickoff.</strong> <strong>Money in the bank inside the first cohort cycle.</strong> Phases 3-4 are post-install scaling layers, they run on your timeline, not the install clock.</p>
-
-<div class="phases-grid">
-<div class="phase-card first">
-<div class="phase-meta"><span class="phase-name">Phase One</span><span class="phase-weeks">Days 1-3</span></div>
-<h3>Core Funnel Install</h3>
-<ul>
-<li>The STRONG Operator Cohort landing page deployed and live</li>
-<li>"What The Cohort Is" VSL embedded (10-Second-Pitch placeholder Day 1, custom 5-7 min VSL by Day 3)</li>
-<li>Stripe + payment + email auto-trigger on cohort enrolment</li>
-<li>Cohort application Typeform live with intake routing</li>
-<li>Brand colours locked (one of the small Day-1 fixes)</li>
-</ul>
-<a href="https://calendly.com/ag-copy/call-with-andrei" class="revenue-cta" target="_blank">Money in the bank within 7 days of go-live<span class="arrow"> &rarr;</span></a>
-</div>
-
-<div class="phase-card">
-<div class="phase-meta"><span class="phase-name">Phase Two</span><span class="phase-weeks">Days 4-7</span></div>
-<h3>Scorecard + Nurture Layer</h3>
-<ul>
-<li>Roofing Operator Score live (ScoreApp / Typeform)</li>
-<li>7-touch nurture sequence segmented by role + revenue band + primary bottleneck</li>
-<li>Bio-link router (IG / TikTok / YouTube / LinkedIn / Facebook to the scorecard as primary)</li>
-<li>14-day welcome flow for new email subscribers</li>
-<li>Cross-sell architecture audit + handoff doc scoped</li>
-</ul>
-</div>
-
-<div class="phase-card">
-<div class="phase-meta"><span class="phase-name">Phase Three</span><span class="phase-weeks">Post-Install - Ongoing</span></div>
-<h3>Content Compound</h3>
-<ul>
-<li>Photoshoot + b-roll banking for cohort + ad creative library</li>
-<li>40-hook bank rolled into IG / TikTok / YT shorts calendar</li>
-<li>Podcast end-roll mechanic + long-form module-pre-sell calendar locked</li>
-<li>Cross-platform cadence locked across YouTube / IG / TikTok / LinkedIn / Facebook / blog</li>
-</ul>
-</div>
-
-<div class="phase-card">
-<div class="phase-meta"><span class="phase-name">Phase Four</span><span class="phase-weeks">Post-Install - Ongoing</span></div>
-<h3>Paid Traffic + Cross-Sell Rollout</h3>
-<ul>
-<li>Pixel + GA4 + retargeting tags installed and firing</li>
-<li>Top-performing organic reels + the 10-Second-Pitch flagship + Lane 2 cohort-pre-sell clips boosted on Meta + YT shorts</li>
-<li>Retargeting campaigns for landing-page abandons + scorecard quiz starts</li>
-<li>Cross-sell architecture between theroofstrategist.com and strongbytamko.com rolled out, with TAMKO-coordinated alliance-side handoff</li>
-<li>Cold campaigns to lookalike audiences of cohort buyers from Cohort 2 forward</li>
-</ul>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="section-eyebrow">Stacked Year-1 floor</div>
+    <h2 class="section-title centered" style="max-width:680px;margin-left:auto;margin-right:auto">Three installs. <em>$440K-$1.23M incremental</em><br>on top of current operations.</h2>
+    <p class="section-sub centered" style="max-width:620px;margin-left:auto;margin-right:auto">The course storefront stays as the cash engine. The alliance stays as the TAMKO-owned community asset. The podcast and YouTube stay as the audience anchor. The cohort becomes the singular productised upgrade tier between them.</p>
+    <div class="outcome-grid">
+      <div class="outcome-card">
+        <div class="oc-num">$300K-$800K</div>
+        <h4>The STRONG Operator Cohort</h4>
+        <p>4 cycles per year x 25 seats x mid-tier mentorship range. Direct Year-1, compounds from cohort alumni, repeat upgrade applicants, and alliance routing.</p>
+      </div>
+      <div class="outcome-card">
+        <div class="oc-num">$60K-$180K</div>
+        <h4>Roofing Operator Score email asset</h4>
+        <p>2K-4.5K incremental email subscribers from existing audience in 90 days. Year-1 nurture-driven course and cohort lift. Compounds for life of the list.</p>
+      </div>
+      <div class="outcome-card">
+        <div class="oc-num">$80K-$250K</div>
+        <h4>Post-acquisition cross-sell architecture</h4>
+        <p>5-15% incremental from clean tier-clarity across the combined course catalogue, cohort, and alliance-application volume. Window is fresh for 90 days.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section style="background:linear-gradient(180deg,transparent,rgba(212,175,108,.025) 50%,transparent)">
-<div class="container">
-<div class="section-eyebrow">Who Builds This</div>
-<h2 class="section-title">AG1 Consulting. <em>One operator. Full-stack DFY.</em></h2>
-<p class="section-sub">Solo. Senior. Revenue-share aligned. Everything below is what I produced for my own clients, not partner agencies, not someone else's work.</p>
+<div class="divider"></div>
 
-<div class="creds-grid">
-<div class="cred-card headline-result">
-<div class="cred-headline">$0 to $172k/mo</div>
-<div class="cred-meta">First Month After Install - My Own Client</div>
-<div class="cred-detail">Took a single client of mine from <strong>zero to $172k/mo in the first month after install.</strong> Cumulative $742K over 5.5 months, 72% growth versus the prior period, same audience, restructured funnel.</div>
-</div>
-
-<div class="cred-card">
-<div class="cred-headline">Hereafter Farms</div>
-<div class="cred-meta">My Build - 26K FB Followers</div>
-<div class="cred-detail">Built end-to-end in weeks. Offer architecture, VSL, ManyChat, Skool community, GHL CRM, email + SMS, my work, start to finish.</div>
-</div>
-
-<div class="cred-card">
-<div class="cred-headline">$1M+ Generated</div>
-<div class="cred-meta">My Aggregate - Across Clients</div>
-<div class="cred-detail">Total client revenue I have produced as a solo operator over the past 18 months. Revenue-share aligned engagements.</div>
-</div>
-</div>
-
-<div class="proof-callout">Verified Dashboards - The Receipts</div>
-<div class="proof-grid">
-<div class="proof-card">
-<img src="proof/revenue-dashboard.png" alt="Business performance summary showing $742,715.59 total revenue and +72% versus prior period">
-<p class="proof-caption"><strong>$742,715.59 Total Revenue</strong><br>Oct 1 2025 to Mar 16 2026 - <strong>+72%</strong> vs prior period</p>
-</div>
-<div class="proof-card">
-<img src="proof/stripe-dashboard.png" alt="Stripe overview dashboard showing $331K gross volume and +101% versus prior period">
-<p class="proof-caption"><strong>$331K Stripe Gross Volume</strong><br>Same window - <strong>+101%</strong> vs prior period</p>
-</div>
-</div>
-
-<div class="trust-strip">
-<span class="trust-label">Built Across</span>
-<div class="trust-clients"><span>Hereafter Farms</span><span class="sep">&middot;</span><span>Wealth Coaches &amp; Educators</span><span class="sep">&middot;</span><span>Trade Service Operators</span><span class="sep">&middot;</span><span>Multi-7-Figure Course Creators (NDA)</span></div>
-</div>
-
-<p class="ownership-line">Every result above is mine, not the prospect's, not a partner agency's. Solo work, solo proof.</p>
-
-<div class="client-quote">
-<p>"He is sharp, he is on time, he works very quickly. If there is a problem, he has already solved it."</p>
-<div class="attribution">- Said by three separate clients during fulfilment</div>
-</div>
-</div>
+<!-- VSL SECTION -->
+<section>
+  <div class="container-narrow">
+    <div class="section-eyebrow">The flagship content anchor</div>
+    <h2 class="section-title">The same operator who built<br><em>the moat in roofing sales education.</em></h2>
+    <p class="section-sub">The landing page hero anchors against this verified embeddable video from The STRONG Roofer channel. Custom 5-7 minute cohort VSL films on Days 1-3 of the install and replaces the placeholder on the live cohort page.</p>
+    <div class="vsl-wrap">
+      <div class="vsl-embed-wrap">
+        <iframe src="https://www.youtube.com/embed/-U2Khv2L7x8" title="10 Second Pitch - Fastest D2D Pitch For Roofing Sales - The STRONG Roofer with Adam Bensman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="vsl-caption">"10 Second Pitch | Fastest D2D Pitch For Roofing Sales" &middot; The STRONG Roofer w/ Adam Bensman &middot; Verified embeddable via oEmbed</p>
+    </div>
+  </div>
 </section>
 
-<section id="book">
-<div class="container">
-<div class="cta-section">
-<div class="section-eyebrow">Next Step</div>
-<h2>Walk through this <em>together?</em></h2>
-<p>30-minute working session. No pitch, no slides. You bring whichever pieces of the three things feel sharpest and we map them against the cohort cadence, the scorecard launch, and the cross-sell architecture between theroofstrategist.com and strongbytamko.com.</p>
-<div class="cta-buttons">
-<a href="https://calendly.com/ag-copy/call-with-andrei" class="cta-primary" target="_blank">Book The Working Session</a>
-<a href="mailto:info@andreicopy.net" class="cta-secondary-link">Or just reply to my email</a>
-</div>
-</div>
-</div>
+<div class="divider"></div>
+
+<!-- DELIVERABLES SECTION -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">Already built</div>
+    <h2 class="section-title">The full plan ships with the hub.<br><em>Eight deliverables. Zero speculation.</em></h2>
+    <p class="section-sub">Every file in the package is grounded in observable public fact: the course storefront, the podcast feed, the YouTube channel post-rename, the TAMKO acquisition announcement, the @roofstrategist IG and TikTok, the Owens Corning partnership, the Roofing Sales Survival Guide on Amazon.</p>
+
+    <!-- FEATURED: LANDING PAGE -->
+    <a href="https://andrei170.github.io/adam-bensman-landing/" class="del-featured">
+      <div class="del-thumb" style="border-right:1px solid var(--border)">
+        <div>
+          <div class="dt-eyebrow">Sample cohort page</div>
+          <div class="dt-headline">The STRONG Operator Cohort</div>
+          <div class="dt-sub">8 weeks &middot; 25 seats &middot; Application-only &middot; Live with Adam</div>
+        </div>
+      </div>
+      <div class="del-info">
+        <span class="tag">Live Sample</span>
+        <h3>Roofing Sales Cohort Landing Page</h3>
+        <p>The productised cohort surface. Dark charcoal operator aesthetic, four-module structure, Adam's trust strip (13+ years, Owens Corning partner, RSRA-to-Roofing-STRONG-Alliance, Sales System in 50+ states, Amazon book), and application CTA. Build-ready on Day 1.</p>
+        <span class="view-link">View the Sample Cohort Page &rarr;</span>
+      </div>
+    </a>
+
+    <!-- SUPPORTING DELIVERABLES -->
+    <div class="del-grid" style="margin-top:18px">
+      <div class="del-card">
+        <span class="tag">Research</span>
+        <h3>Full Funnel Audit</h3>
+        <p>Verified scrape of theroofstrategist.com, strongbytamko.com, blog network, podcast feed, @roofstrategist IG and TikTok, YouTube post-rename, LinkedIn, and the TAMKO acquisition press releases across Roofing Contractor, BusinessWire, and AccessNewswire. Zero speculation.</p>
+      </div>
+      <div class="del-card">
+        <span class="tag">Copy</span>
+        <h3>Bottleneck Analysis + Revenue Math</h3>
+        <p>Three bottlenecks ranked by revenue impact. Year-1 floor math per layer. Cohort cycle calendar. Scorecard flow and segmentation routing. Cross-sell architecture scoped. Combined Year-1 floor table.</p>
+      </div>
+      <div class="del-card">
+        <span class="tag">Copy</span>
+        <h3>VSL Preview Script</h3>
+        <p>90-second short-form script Adam can film in one take on his phone. Four-beat structure. Brand signature line. Plus the full 5-7 minute cohort VSL seven-beat structure for Day 1-3 of install.</p>
+      </div>
+      <div class="del-card">
+        <span class="tag">Email</span>
+        <h3>Email Sequence Stack</h3>
+        <p>Pre-sell welcome flow segmented by role and revenue band. Cohort application follow-up. Post-purchase onboarding. Podcast end-roll mechanic scripted and scheduled.</p>
+      </div>
+      <div class="del-card">
+        <span class="tag">Copy</span>
+        <h3>Copy Strategy + Voice</h3>
+        <p>Operator-grounded roofing-sales register. Full avatar segmentation across four buyer types. Headline bank. Positioning ladder from free content through 1-1 consulting. Voice rules grounded in the 10-Second-Pitch cadence and the Roofing Sales Survival Guide.</p>
+      </div>
+      <div class="del-card">
+        <span class="tag">Outreach</span>
+        <h3>Outreach Copy Stack</h3>
+        <p>IG DM (warm reentry, 44 words). LinkedIn DM (alt-channel fallback). Email (full bottleneck walkthrough, two subject variants). Day-4 bump. Day-8 channel-switch. Day-14 close-loop. Day-30 reactivation.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- ANDREI SENDER CARD -->
+<section>
+  <div class="container-narrow">
+    <div class="section-eyebrow">Who built this</div>
+    <h2 class="section-title">AG1 Consulting Ltd</h2>
+    <div class="founder-card">
+      <div class="founder-photo">
+        <span class="monogram">AG</span>
+        <!-- SWAP-SLOT: Replace monogram span with IMG-TAG src=[andrei-headshot-url] alt="Andrei Givero"
+             Day-1. Portrait minimum 88x88. Source: Instagram @andre.g1 profile or case study reels. -->
+      </div>
+      <div class="founder-body">
+        <h3>Andrei Givero</h3>
+        <p class="founder-title">Founder, AG1 Consulting Ltd &middot; info@andreicopy.net</p>
+        <p>Full-stack marketing agency. Funnels, ads, copy, VSLs, email, tech, and sales infrastructure. AI-powered. One point of contact. Revenue share alignment means we only win when you win.</p>
+        <p>Our best client went from $0 to $172K per month in our first month working together. Setup is required. Revenue share is the structure.</p>
+        <div>
+          <span class="proof-stat">$0 to $172K/mo &middot; Month 1</span>
+          <span class="proof-stat">Full install under 7 days</span>
+          <span class="proof-stat">Rev share aligned</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BOTTOM CTA -->
+<section class="bottom-cta">
+  <div class="container-narrow">
+    <h2>The post-TAMKO window<br>is <em>not permanent.</em></h2>
+    <p>Walk the three installs. No pitch on the call. You walk the plan, you decide whether the timing is right. All three install in less than 7 days from kickoff.</p>
+    <a href="https://calendly.com/ag-copy/call-with-andrei" class="cta-primary">Walk the Plan with Andrei</a>
+    <p class="hero-trust" style="margin-top:16px">Or reply directly to the DM. Whichever is faster.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-<div class="container">
-<p class="signoff">Built specifically for Adam Bensman. Use what is useful, ignore the rest. The work is yours.</p>
-<p class="meta">AG1 Consulting - Prepared 2026-05-16 - Refreshed weekly until you book - Built for @roofstrategist</p>
-<p class="disclaimer">The STRONG Operator Cohort is sales operations and team-build training, not a roofing license or a contractor certification; the Roofing STRONG Alliance by TAMKO is a separate application-only contractor community at strongbytamko.com, with membership free for TAMKO Edge contractors. Revenue figures referenced on this page are floor estimates and ranges from Adam's stated 13-year operating record building The Roof Strategist, not guarantees on cohort outcomes or roofing-license outcomes. Results vary, dependent on cohort fill rate and operator inputs. Roofing licensure is regulated at the state level and varies by jurisdiction.</p>
-</div>
+  <div class="container">
+    <p class="footer-text">
+      AG1 Consulting Ltd &middot; <a href="mailto:info@andreicopy.net">info@andreicopy.net</a> &middot; Built for Adam Bensman (@roofstrategist) &middot; May 2026<br>
+      Outcomes depend on individual sales rep ramp, market conditions, and execution. Sales results are not typical and depend on individual effort. AG1 Consulting Ltd builds the marketing funnel only; sales training delivered exclusively by The Roof Strategist.
+    </p>
+  </div>
 </footer>
 
 </body>
